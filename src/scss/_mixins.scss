@@ -1,0 +1,19 @@
+@mixin montserrat-normal{
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+@mixin montserrat-bold{
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+@mixin lato-normal{
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+@mixin lato-bold{
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
