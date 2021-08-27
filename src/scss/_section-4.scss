@@ -1,0 +1,63 @@
+.people-are-talking-about-fork {
+  background-image: url("../../dist/img/section-4_bacground.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  background-color: #4A3B4E;
+  @media (min-width: 992px) {
+    background-size: cover;
+  }
+}
+
+.people-are-talking-about-fork__title {
+  @include montserrat-bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+  padding-top: 57px;
+  @media (min-width: 481px) {
+    padding-top: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 100px;
+  }
+}
+
+.people-are-talking-about-fork__blocks {
+  display: grid;
+  padding-top: 10px;
+  @media (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 992px) {
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.blocks__content {
+  @include lato-bold;
+  width: 270px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  @media (min-width: 481px) {
+    width: 345px;
+  }
+}
+
+.blocks__content__image {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
