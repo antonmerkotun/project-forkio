@@ -1,0 +1,93 @@
+.fork-app {
+  background: url("../../dist/img/section-1_background.png") center;
+  height: 800px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: -1px;
+  position: relative;
+}
+
+.fork-app__title {
+  @include montserrat-bold;
+  font-size: 48px;
+  line-height: 48px;
+  padding-top: 50px;
+  @media (min-width: 481px) {
+    font-size: 72px;
+    line-height: 72px;
+    padding-top: 70px;
+  }
+  @media (min-width: 992px) {
+    font-size: 82px;
+    line-height: 82px;
+    padding-top: 50px;
+  }
+}
+
+.fork-app__text {
+  @include montserrat-normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 19px;
+  color: #8D81AC;
+  @media (min-width: 481px) {
+    @include lato-normal;
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  @media (min-width: 992px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.fork-app__text-info {
+  @include montserrat-normal;
+  color: #848E97;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 14px;
+  @media (min-width: 481px) {
+    padding-top: 19px;
+  }
+}
+
+.button-download {
+  @include montserrat-bold;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%,50%);
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 290px;
+  height: 45px;
+  border-radius: 40px;
+  background-color: #8D81AC;
+  border: 1px solid transparent;
+  @media (min-width: 481px) {
+    width: 390px;
+    height: 62px;
+    font-size: 21px;
+    line-height: 23px;
+  }
+  &::after {
+    content: 'Unlimited 30-Days Trial Period';
+    position: absolute;
+    color: #848E97;
+    font-size: 14px;
+    line-height: 16px;
+    @include montserrat-normal;
+    white-space: nowrap;
+    transform: translate(-50%,0);
+    top: 125%;
+    left: 50%;
+  }
+  &:hover {
+    background-color: #FFFFFF;
+    color: #8D81AC;
+    border-color: #8D81AC;
+    cursor: pointer;
+  }
+}
