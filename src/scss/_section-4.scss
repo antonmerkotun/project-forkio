@@ -37,7 +37,7 @@
 
 .blocks__content {
   @include lato-bold;
-  width: 270px;
+  max-width: 270px;
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
@@ -47,7 +47,7 @@
   text-align: center;
   align-content: center;
   @media (min-width: 481px) {
-    width: 345px;
+    max-width: 345px;
   }
 }
 
