@@ -31,6 +31,14 @@
   grid-area: logo;
   display: flex;
   align-items: center;
+
+  &:hover .logo {
+    background-image: url("../../dist/img/header-logo-hover.png");
+  }
+  &:hover .header__logo-title{
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 }
 
 .logo {
@@ -38,10 +46,6 @@
   width: 43px;
   background-image: url("../../dist/img/header-logo.png");
   cursor: pointer;
-
-  &:hover {
-    background-image: url("../../dist/img/header-logo-hover.png");
-  }
 }
 
 .header__logo-title {
@@ -54,10 +58,6 @@
     align-items: center;
     color: #8D81AC;
     margin-left: 15px;
-    &:hover {
-      color: #FFFFFF;
-      cursor: pointer;
-    }
   }
 }
 
