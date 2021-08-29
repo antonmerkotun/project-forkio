@@ -61,3 +61,34 @@
   margin: 0 auto;
   justify-content: center;
 }
+
+.people-are-talking-about-fork-info {
+  padding-top: 37px;
+  color: #A291A5;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  @include lato-normal;
+  max-width: 250px;
+  @media (min-width: 481px) {
+    max-width: 700px;
+    padding-top: 68px;
+  }
+  @media (min-width: 992px) {
+    max-width: 890px;
+    padding-top: 118px;
+  }
+}
+
+.people-are-talking-about-fork-line {
+  margin: 22px auto auto auto;
+  height: 2px;
+  max-width: 245px;
+  background-color: #645766;
+  @media (min-width: 481px) {
+    max-width: 555px;
+  }
+  @media (min-width: 992px) {
+    max-width: 780px;
+  }
+}
