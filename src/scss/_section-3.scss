@@ -1,4 +1,10 @@
 .section-get {
+	
+	@media screen and(min-width:993px) {
+	background: #F4F4F4;
+	padding-top: 90px;
+		
+	}
 }
 .section-get_container {
 	text-align: center;
@@ -32,6 +38,12 @@
 	}
 	&::before {
 		content: "<"
+	}
+	@media screen and (min-width: 481px) {
+		font-size: 42px;
+	}
+	@media screen and (min-width: 993px) {
+		font-size: 48px;
 	}
 }
 .section-get__list {
@@ -78,16 +90,12 @@
 	line-height: 21px;
 }
 .get__img {
-	// margin-right: -10px;
 	grid-area: img;
 	text-align: right;
-	// margin-right: -20px;
 	justify-items: end;
 
 }
 .section-get__image{
-	// display: block;
-	// grid-area: img;
 	text-align: right;
 	max-width: 660px;
 	justify-items: end;
