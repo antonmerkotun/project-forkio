@@ -73,22 +73,29 @@
     font-size: 21px;
     line-height: 23px;
   }
-  &::after {
-    content: 'Unlimited 30-Days Trial Period';
-    position: absolute;
-    color: #848E97;
-    font-size: 14px;
-    line-height: 16px;
-    @include montserrat-normal;
-    white-space: nowrap;
-    transform: translate(-50%,0);
-    top: 125%;
-    left: 50%;
-  }
+  //&::after {
+  //  content: 'Unlimited 30-Days Trial Period';
+  //  position: absolute;
+  //  color: #848E97;
+  //  font-size: 14px;
+  //  line-height: 16px;
+  //  @include montserrat-normal;
+  //  white-space: nowrap;
+  //  transform: translate(-50%,0);
+  //  top: 125%;
+  //  left: 50%;
+  //}
   &:hover {
     background-color: #FFFFFF;
     color: #8D81AC;
     border-color: #8D81AC;
     cursor: pointer;
   }
+}
+
+.button-download__info {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%,50%);
+
 }
