@@ -2,6 +2,9 @@
 position: relative;
 padding-top: 38px;
 padding-bottom: 80px;
+@media screen and (min-width: 481px) {
+	padding-top: 88px;
+}
 &::before {
 	top: 15px;
 	left: calc((100% - 245px) / 2);
