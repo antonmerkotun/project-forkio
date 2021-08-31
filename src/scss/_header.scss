@@ -25,17 +25,16 @@
   }
 }
 
-//           logo
-
 .header__logo {
   grid-area: logo;
   display: flex;
   align-items: center;
 
   &:hover .logo {
-    background-image: url("../../dist/img/header-logo-hover.png");
+    background-image: url("../../dist/img/header/header-logo-hover.png");
   }
-  &:hover .header__logo-title{
+
+  &:hover .header__logo-title {
     color: #FFFFFF;
     cursor: pointer;
   }
@@ -44,7 +43,7 @@
 .logo {
   height: 41px;
   width: 43px;
-  background-image: url("../../dist/img/header-logo.png");
+  background-image: url("../../dist/img/header/header-logo.png");
   cursor: pointer;
 }
 
@@ -61,7 +60,6 @@
   }
 }
 
-//                    button
 
 .header__button {
   grid-area: button;
@@ -93,8 +91,6 @@
   @media (min-width: 481px) {
   }
 }
-
-//                  burger menu
 
 .header__nav__burger-menu {
   height: 23px;
@@ -137,8 +133,6 @@
   }
 }
 
-//                  burger menu active
-
 .burger-menu-active {
   .header__nav__burger-menu-strip {
     display: none;
@@ -167,8 +161,6 @@
   }
 }
 
-//                burger menu list
-
 .header__nav__list {
   display: none;
   max-width: 517px;
@@ -185,7 +177,7 @@
     background-color: #010005;
     width: 900px;
   }
-  // header__nav__list-active
+
   &-active {
     display: inline-block;
     width: 290px;
@@ -206,7 +198,7 @@
       width: 700px;
     }
   }
-  // header__nav__list__menu
+
   &__menu {
     display: block;
     position: relative;
@@ -216,7 +208,7 @@
     line-height: 26px;
     padding: 29px 0 21px 35px;
     border: 1px solid #3B3B3B;
-    // header__nav__list__menu:hover
+
     &:hover {
       color: #FFFFFF;
       cursor: pointer;
@@ -231,7 +223,7 @@
       border: 0;
       color: #8D81AC;
     }
-    //header__nav__list__menu:active
+
     &:active {
       color: #8D81AC;
 

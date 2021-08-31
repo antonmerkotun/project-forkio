@@ -1,6 +1,7 @@
 'use strict'
 
 const {src, dest, series, watch} = require('gulp'),
+
     sass = require('gulp-sass')(require('sass')),
     browserSync = require('browser-sync').create(),
     gulpJsMinify = require('gulp-js-minify'),
@@ -11,22 +12,17 @@ const {src, dest, series, watch} = require('gulp'),
     uglify = require('gulp-uglify'),
     autoprefixer = require('gulp-autoprefixer');
 
+
 function clear() {
     return src('./dist')
         .pipe(clean())
 }
 
 function scss() {
-    return src('./src/scss/**/*.scss')
+    return src('./src/scss/**/*')
         .pipe(sass())
-        .pipe(autoprefixer('last 3 versions'))
+        .pipe(autoprefixer('last 100 versions'))
         .pipe(cleanCss())
-        .pipe(concat('styles.min.css'))
-        .pipe(dest('./src/css'))
-}
-
-function css() {
-    return src('./src/css/**/*.css')
         .pipe(concat('styles.min.css'))
         .pipe(dest('./dist/style'))
 }
@@ -52,9 +48,9 @@ function serv() {
         },
     });
 	 watch("./index.html").on("change",browserSync.reload);
-    watch('./src/scss/**.scss', series(scss, css)).on('change', browserSync.reload);
+    watch('./src/scss/**.scss', series(scss)).on('change', browserSync.reload);
     watch('./src/js/**.js', series(concatJs)).on('change', browserSync.reload);
 }
 
-exports.build = series(clear, scss, css, concatJs, image)
-exports.dev = series(scss, css, concatJs, serv)
+exports.build = series(clear, scss, concatJs, image)
+exports.dev = series(scss, concatJs, serv)

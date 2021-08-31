@@ -1,5 +1,5 @@
 .fork-app {
-  background: url("../../dist/img/section-1_background.png") center;
+  background: url("../../dist/img/section1/section-1_background.png") center;
   height: 800px;
   color: #FFFFFF;
   text-align: center;
@@ -21,7 +21,7 @@
   @media (min-width: 992px) {
     font-size: 82px;
     line-height: 82px;
-    padding-top: 50px;
+    padding-top: 130px;
   }
 }
 
@@ -58,7 +58,7 @@
   @include montserrat-bold;
   position: absolute;
   bottom: 0;
-  transform: translate(-50%,50%);
+  transform: translate(-50%, 50%);
   font-size: 18px;
   line-height: 20px;
   color: #FFFFFF;
@@ -73,18 +73,7 @@
     font-size: 21px;
     line-height: 23px;
   }
-  //&::after {
-  //  content: 'Unlimited 30-Days Trial Period';
-  //  position: absolute;
-  //  color: #848E97;
-  //  font-size: 14px;
-  //  line-height: 16px;
-  //  @include montserrat-normal;
-  //  white-space: nowrap;
-  //  transform: translate(-50%,0);
-  //  top: 125%;
-  //  left: 50%;
-  //}
+
   &:hover {
     background-color: #FFFFFF;
     color: #8D81AC;
@@ -95,7 +84,11 @@
 
 .button-download__info {
   position: absolute;
-  bottom: 0;
-  transform: translate(-50%,50%);
-
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  color: #848E97;
+  font-size: 14px;
+  line-height: 16px;
+  @include montserrat-normal;
 }
