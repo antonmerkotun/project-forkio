@@ -51,6 +51,7 @@ function serv() {
             baseDir: "./",
         },
     });
+	 watch("./index.html").on("change",browserSync.reload);
     watch('./src/scss/**.scss', series(scss, css)).on('change', browserSync.reload);
     watch('./src/js/**.js', series(concatJs)).on('change', browserSync.reload);
 }

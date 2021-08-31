@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+.section-editor {
+	// background: rgba(0, 0, 0, 0.0001);
+	margin: 0 auto;
+}
+.container- {
+	width: 100%;
+	@media screen and (min-width:320px) {
+		max-width: 480px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	@media screen and (min-width:481px) {
+		max-width: 992px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	@media screen and (min-width:1200px) {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+}
+.editor__title {
+	margin: 80px 0 28px;
+	text-align: center;
+	@include lato-bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: #635C73;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	@media  screen and (min-width: 768px){
+		font-size: 40px;
+	}
+}
+.editor__subtitle {
+	text-align: center;
+	margin: 0 auto;
+	@media  screen and (min-width: 768px){
+		font-size: 21px;
+		line-height: 32px;
+	}
+
+	// width: 276px;
+	padding: 15px;
+	@include lato-normal;
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 36px;
+}
+.editor__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 88px;
+	
+}
+.editor__item {
+	display: inline-flex;
+	text-align: center;
+	width: 118px;
+	border-radius: 5px;
+	margin:0 15px 20px 0;
+}
+.editor__button {
+	border: 1px solid hsla(0, 2%, 39%, 0.145);
+	display: inline-block;
+	text-decoration: none;
+	border: none;
+	width: 70px;
+	width: 70px;
+	padding: 5px 0 5px 8px;
+	// background: url('/src/img/section2/eye.png')5px 7px/12px 12px no-repeat;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px 0 0 5px;
+	border-right: none;
+	
+	&-eye {
+		background: url('/src/img/section2/eye.png')5px 7px/12px 12px no-repeat;
+		background-color: #e5e5e55f;
+	}
+	&-star {
+		background: url('/src/img/section2/star.png')5px 6px/12px 12px no-repeat;
+		background-color: #e5e5e55f;
+	}
+	&-fork {
+		background: url('/src/img/section2/fork.png')5px 7px/12px 12px no-repeat;
+		background-color: #e5e5e55f;
+	}
+}
+
+.editor__icon {
+	margin-top: 6px;
+
+}
+.editor__watch {
+	padding: 5px;
+	border: 1px solid #E5E5E5;
+	border-radius: 0 5px 5px 0;
+	font-size: 14px;
+	@include lato-bold;
+}
+.editor__users {
+
+	height: 22px;
+	display: inline-block;
+	border-left: 1px solid #E5E5E5;
+}
