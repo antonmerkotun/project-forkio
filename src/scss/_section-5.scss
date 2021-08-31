@@ -11,6 +11,16 @@ padding-bottom: 80px;
 	width: 245px;
 	height: 2px;
 	background:#645766;
+	@media screen and (min-width: 600px) {
+		width: 555px;
+		left: calc((100% - 555px) / 2);
+	
+	}
+	@media screen and (min-width: 992px) {
+		width: 780px;
+		left: calc((100% - 780px) / 2);
+	
+	}
 }
 }
 .section-pricing__content {
