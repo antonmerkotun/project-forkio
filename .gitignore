@@ -7,7 +7,7 @@
 out
 gen
 node_modules
-dist
+
 package-lock.json
 src/.DS_Store
 .DS_Store
