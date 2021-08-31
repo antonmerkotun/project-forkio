@@ -35,23 +35,23 @@
 	letter-spacing: 2px;
 	@media  screen and (min-width: 768px){
 		font-size: 40px;
+		margin-top: 150px;
 	}
 }
 .editor__subtitle {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto auto 36px;
 	@media  screen and (min-width: 768px){
 		font-size: 21px;
 		line-height: 32px;
 	}
-
-	// width: 276px;
 	padding: 15px;
 	@include lato-normal;
 	color: #323232;
 	font-size: 14px;
 	line-height: 20px;
-	margin-bottom: 36px;
+	// width: 276px;
+	//margin-bottom: 36px;
 }
 .editor__list {
 	display: flex;
@@ -72,7 +72,7 @@
 	display: inline-block;
 	text-decoration: none;
 	border: none;
-	width: 70px;
+	//width: 70px;
 	width: 70px;
 	padding: 5px 0 5px 8px;
 	// background: url('/src/img/section2/eye.png')5px 7px/12px 12px no-repeat;
