@@ -1,8 +1,7 @@
 .section-pricing {
-
 position: relative;
 padding-top: 38px;
-// padding-bottom: 20px;
+padding-bottom: 80px;
 &::before {
 	top: 15px;
 	left: calc((100% - 245px) / 2);
@@ -26,36 +25,48 @@ padding-top: 38px;
 	margin-bottom: 32px;
 	text-align: center;
 }
+.div {
+	// margin-bottom: 50px;
+	// padding-bottom: 50px;
+}
 .section-pricing__list {
-	& :last-child().section-pricing__item {
-	}
+
 	@media screen and (min-width: 600px) {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: center;
+	// align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 600 1fr;
+	// grid-row-gap: 50px;
+	grid-row-gap: 30px;
+	// align-items: end;
+	align-items: start;
+	&:first-child .section-pricing__item {
+		// height: 457px;
 }
 @media screen and (min-width: 992px) {
-	flex-wrap: no-wrap;
-
+	// flex-wrap: no-wrap;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 }
-
+}
 .section-pricing__item {
 	margin:  auto;
 	width: 257px;
-	height: 500px;
-	padding: 0 10px;
+	// height: 460px;
+	// padding: 0 10px;
+	// margin-bottom: 18px;
+	@media screen and(max-width:600px) {
+		margin-bottom: 18px;
+	}
 
 	&-big {
 		width: 299px;
-		// height: 560px;
-		@media screen and (min-width:481px) {
-			
-		}
+	
 	}
-	margin-bottom: 18px;
 }
 
 .section-pricing__item__title {
@@ -65,9 +76,17 @@ padding-top: 38px;
 	text-transform: uppercase;
 	font-size: 24px;
 	background:#7A6C7A;
+	&-big {
+		background: #3F2C41;
+	}
 }
 .section-pricing__item__box {
 	background: #6F5761;
+	height: 377px;
+	&-big {
+		background: #473249;
+		height: 449px;
+	}
 }
 .section-pricing__item__price {
 	@include montserrat-bold;
@@ -76,6 +95,7 @@ padding-top: 38px;
 	padding: 30px	0;
 	&-big {
 		font-size: 82px;
+		
 	}
 }
 .section-pricing__item__text {
@@ -101,8 +121,14 @@ padding-top: 38px;
 	margin: auto;
 	font-size: 16px;
 	line-height: 18px;
-	margin-bottom: 52px;
-	// padding: 0 10px;
+	margin-bottom: 36px;
+	padding: 0 10px;
+	&-big {
+		margin-bottom: 80px;
+	}
+	&- {
+		margin-bottom: 50px;
+	}
 
 }
 .section-pricing__item__button {
@@ -113,6 +139,6 @@ padding-top: 38px;
 	background: #7A6C7A;
 	color: $colorWhite;
 	text-transform: uppercase;
-	margin-bottom: 67px;
+	margin-bottom: 37px;
 	cursor: pointer;
 }
